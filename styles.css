@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+body{
+    background: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header{
+    width: 80%;
+    margin: auto;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+header > ul > li {
+    margin: 0 35px;
+    list-style: none;
+}
+header > ul a:hover {
+    color: #ff5e61;
+}
+.pra{
+    color: white;
+    width: 420px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+.container > img{
+    width : 600px;
+}
+.homeInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 7rem;
+    margin-top: 30px;
+}
+.homeInfo p{
+    margin: 40px 0;
+}
+.homeInfo a{
+    padding: 10px 35px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 17px;
+    background: linear-gradient(to right, #9b0123, #d32c50, #ff5e61);
+    cursor: pointer;
+}
+.homeInfo a:hover{
+    background: linear-gradient(to right, #ff5e61, #d32c50, #9b0123);
+}
+.shop{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+.shopNow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    color: #fff;
+}
+.shopNow h1{
+    font-size: 38px;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.shopNow p, .shopNow span{
+    font-size: 24px;
+    font-weight: 600;
+    color: #e8d1b3;
+}
+.Products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 350px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.product1 img{
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+}
+.product1 h1{
+    margin: 15px 0;
+    font-size: 20px;
+    color: #53297a;
+}
+.product1 p del{
+    color: #909090;
+}
+.product1 p{
+    color: rgb(223, 69, 69);
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.product1 a{
+    padding: 10px 45px;
+    border-radius: 5px;
+    background: #53297a;
+    margin-bottom: 15px;
+}
+.product1 a:hover{
+    background: #000000;
+    margin-bottom: 15px;
+}
+.aboutUs{
+    width: 90%;
+    margin: auto;
+    color: #fff;
+}
+.ourTeam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.ourTeam h2{
+    margin: 15px 0;
+}
+.ourTeam img{
+    width: 500px;
+    height: 310px;
+}
+.ourTeam p{
+    width: 52rem;
+}
+@media only screen and (max-width:1112px) {
+    header > ul > li{
+        margin-right: 45px;
+    }
+    header > ul > li a{
+        font-size: 10px;
+    }
+    .container{
+        margin-top: -20px;
+    }
+    .container > img{
+        width : 300px;
+    }
+    .homeInfo {
+        /* gap: 25px; */
+        margin-left: 10px;
+    }
+    .homeInfo a{
+        padding: 7px 20px;
+        font-size: 10px;
+    }
+    .homeInfo p{
+        margin: 25px 0;
+    }
+    .homeInfo img{
+        width: 100px;
+    }
+    .homeInfo p{
+        font-size: 10px;
+        width: 270px;
+    }
+    .shopNow h1{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:795px){
+    .product1{
+        width: 300px;
+    }
+}
+@media only screen and (max-width:540px){
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    .homeInfo{
+        align-items: center;
+    }
+    .homeInfo p{
+        width: 400px;
+    }
+    .shopNow p, .shopNow span{
+        font-size: 15px;
+    }
+    .shopNow h1{
+        font-size: 20px;
+    }
+    .product1{
+        width: 230px;
+    }
+}
+@media only screen and (max-width:420px){
+    header ul li{
+        margin: 0 10px;
+    }
+    .homeInfo p{
+        width: 300px;
+        text-align: center;
+    }
+    .shopNow{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+    .shopNow p, .shopNow span{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .product1{
+        width: 300px;
+    }
+}
